@@ -3,6 +3,7 @@ import SummaryApi from '../common'
 import Context from '../context'
 import diaplayCurrency from '../helpers/displayCurrency'
 import {MdDelete}  from "react-icons/md"
+import { Link } from 'react-router-dom'
 
 const Cart = () => {
     const [data, setData] = useState([])
@@ -181,8 +182,11 @@ const Cart = () => {
                                     <p>{diaplayCurrency(totalPrice)}</p>    
                                 </div>
                             </div>
-
-                            <button className='bg-[#3F2305] p-2 text-white w-full mt-8 border-2 border-black'>Payment</button>
+                            <Link to="/payment"
+                            className='bg-[#3F2305] p-2 text-white w-full mt-8 border-2 border-black inline-block text-center'>
+                                Payment
+                            </Link>
+                            {/* <button className='bg-[#3F2305] p-2 text-white w-full mt-8 border-2 border-black'>Payment</button> */}
                         </div>
                     )
             }

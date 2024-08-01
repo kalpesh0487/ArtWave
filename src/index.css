@@ -11,6 +11,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Hide scrollbars globally for WebKit browsers (Chrome, Safari) */
+html::-webkit-scrollbar, 
+body::-webkit-scrollbar {
+  display: none; /* Hide scrollbars */
+}
+
+html, body {
+  overflow: hidden; /* Hide scrollbars and prevent scrolling */
+}
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

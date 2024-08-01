@@ -1,4 +1,4 @@
-const backendDomain = 'http://localhost:8080'
+const backendDomain = 'https://art-gallary-backend-server.vercel.app/'
 
 const SummaryApi = {
     signUp : {
