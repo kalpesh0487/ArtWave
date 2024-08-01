@@ -1,4 +1,4 @@
-const backendDomain = 'https://art-gallary-backend-server.vercel.app/'
+const backendDomain = 'https://art-gallary-backend-server.vercel.app'
 
 const SummaryApi = {
     signUp : {
