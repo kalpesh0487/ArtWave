@@ -11,21 +11,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Hide scrollbars globally for WebKit browsers (Chrome, Safari) */
+/* Hide scrollbar for Chrome, Safari and Opera */
 html::-webkit-scrollbar, 
 body::-webkit-scrollbar {
   display: none; /* Hide scrollbars */
 }
 
+/* Hide scrollbar for IE, Edge and Firefox */
 html, body {
-  overflow: hidden; /* Hide scrollbars and prevent scrolling */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  overflow: auto; /* Allow scrolling */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling for mobile devices */
 }
-
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-
-
