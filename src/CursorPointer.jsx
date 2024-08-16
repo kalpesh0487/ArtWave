@@ -11,8 +11,8 @@ const CursorPointer = styled.div.attrs(props => ({
   position: fixed; /* Use fixed to keep it relative to the viewport */
   border-radius: 50%;
   mix-blend-mode: difference;
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   transform: translate(-50%, -50%);
   pointer-events: none; /* Prevent cursor from capturing events */
   transition: background-color 0.3s ease; /* Smooth color change */
