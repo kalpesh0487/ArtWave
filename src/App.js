@@ -10,7 +10,6 @@ import { useEffect, useState } from 'react';
 import Context from './context';
 import { useDispatch } from 'react-redux';
 import { setUserDetails } from './store/userSlice';
-import LocomotiveScroll from 'locomotive-scroll';
 import CursorPointer from './CursorPointer';
 
 function App() {
@@ -20,7 +19,7 @@ function App() {
 
   const dispatch = useDispatch()
   const [cartProductCount, setCartProductCount] = useState(0)
-  const locomotiveScroll = new LocomotiveScroll();
+  
 
   const fetchUserDetails = async()=>{
     const dataResponse = await fetch(SummaryApi.curret_user.url,{
